@@ -10,7 +10,7 @@ public class Balls  {
         this.speed=speed;
         this.height=height;
     }
-    public void drawBall(int level, PApplet draw){
+    public void ball(int level, PApplet draw){
         draw.ellipse(this.speed++*level,height*level, diameter,diameter);
 
     }
