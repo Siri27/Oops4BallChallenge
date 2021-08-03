@@ -4,8 +4,8 @@ public class Oops4BallChallenge extends PApplet  {
 
     public static final int WIDTH = 720;
     public static final int HEIGHT = 600;
-    int x=0;
-    int y =HEIGHT/5;
+    int xCoordinate=0;
+    int yCoordinate =HEIGHT/5;
     private Balls[] balls=new Balls[4];
 
     public static void main(String args[])
@@ -22,7 +22,7 @@ public class Oops4BallChallenge extends PApplet  {
     @Override
     public void setup() {
         for(int i=0;i<4;i++){
-        balls[i]=new Balls(x, y);
+        balls[i]=new Balls(xCoordinate, yCoordinate);
         }
     }
 
@@ -30,7 +30,7 @@ public class Oops4BallChallenge extends PApplet  {
     public void draw() {
         for(int i=0;i<4;i++){
 
-            balls[i].drawBall(i+1,this);
+            balls[i].ball(i+1,this);
         }
     }
 }
